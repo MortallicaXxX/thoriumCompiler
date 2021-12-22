@@ -1,0 +1,44 @@
+{
+  "name": "thoriumcompiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "watch": {
+    "build-WebPack": {
+      "patterns": [
+        "src",
+        "test"
+      ],
+      "extensions": "ts",
+      "quiet": true,
+      "legacyWatch": true,
+      "runOnChangeOnly": false
+    }
+  },
+  "dependencies": {
+    "npm-watch": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "test": "node dist/index.js",
+    "build-WebPack": "webpack",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MortallicaXxX/thoriumCompiler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MortallicaXxX/thoriumCompiler/issues"
+  },
+  "homepage": "https://github.com/MortallicaXxX/thoriumCompiler#readme"
+}
